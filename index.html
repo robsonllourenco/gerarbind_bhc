@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de Binds</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Logo BGO Hospital Center" class="logo">
+    </div>
+    <div class="container">
+        <form id="fraseForm">
+            <div class="form-group">
+                <label for="tecla">Escolha o numero onde vai usar a bind:</label>
+                <select id="tecla">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="nome">Insira seu primeiro nome: (Igual no BGO)</label>
+                <input type="text" id="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rg">Insira seu ID:</label>
+                <input type="text" id="rg" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cargo">Selecione seu cargo:</label>
+                <select id="cargo">
+                    <option value="Estagiário">Estagiário</option>
+                    <option value="Paramédico">Paramédico</option>
+                    <option value="Socorrista">Socorrista</option>
+                    <option value="Enfermeiro">Enfermeiro</option>
+                    <option value="Aux. Méd.">Aux. Méd.</option>
+                    <option value="Méd. Residente">Méd. Residente</option>
+                    <option value="Méd. Supv.">Méd. Supv.</option>
+                    <option value="Méd. Chefe">Méd. Chefe</option>
+                    <option value="Supv. Geral">Supv. Geral</option>
+                    <option value="Coord. Aux">Coord. Aux</option>
+                    <option value="Coord. Médico">Coord. Médico</option>
+                    <option value="Coord. Admin">Coord. Admin</option>
+                    <option value="Coord. Geral">Coord. Geral</option>
+                    <option value="Vice Diretor">Vice Diretor</option>
+                    <option value="Diretor">Diretor</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="genero">Informe seu gênero:</label>
+                <select id="genero">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
+            </div>
+
+            <button type="button" onclick="gerarFrase()">Gerar Bind</button>
+        </form>
+
+        <h2>Bind Gerada:</h2>
+        <div id="fraseGerada" class="output"></div>
+        <button id="copyButton" onclick="copiarFrase()" style="display: none;">Copiar Bind</button>
+    </div>
+
+    <div id="popup" class="popup">Bind copiada! Só colar no F8 no BGO</div>
+
+    <footer>
+        <p>Desenvolvido por Ministro [273]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
