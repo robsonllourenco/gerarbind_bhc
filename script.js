@@ -18,7 +18,7 @@ function gerarFrase() {
         cargo = cargosFemininos[cargo];
     }
 
-    const frase = `bind ${tecla} me ✚ BGO Hospital Center ✚ ${cargo} ✚ ${nome} - RG: ${rg}`;
+    const frase = `bind ${tecla} me ✚ BGO Hospital Center ✚ ${cargo} ✚ ${nome} RG: ${rg}`;
     const fraseGeradaElement = document.getElementById('fraseGerada');
     fraseGeradaElement.innerText = frase;
 
