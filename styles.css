@@ -26,15 +26,29 @@ body {
 }
 
 h1 {
-    color: #d32027; /* Vermelho da imagem enviada */
+    font-size: 2.5rem; /* Aumentando o tamanho da fonte */
+    color: #d32027; /* Vermelho forte da imagem */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adicionando uma sombra sutil */
     margin-bottom: 10px;
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    padding: 10px 0;
+    border-bottom: 2px solid #d32027; /* Borda inferior para destacar o título */
 }
 
 h3 {
     color: #333;
     margin-top: 0;
     font-weight: normal;
+    font-size: 1.2rem; /* Ajustando o tamanho da fonte do subtítulo */
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Deixando o subtítulo em letras maiúsculas */
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd; /* Borda inferior sutil */
+    margin-bottom: 20px;
+    font-style: italic; /* Adicionando um estilo itálico */
 }
+
 
 .form-group {
     margin-bottom: 15px;
