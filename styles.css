@@ -23,13 +23,17 @@ body {
 .header {
     text-align: center;
     margin-bottom: 20px;
-    width: 100%;
 }
 
 h1 {
-    text-align: center;
-    color: #d32027; /* Substituí pelo tom de vermelho da imagem */
-    margin-bottom: 20px;
+    color: #d32027; /* Vermelho da imagem enviada */
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #333;
+    margin-top: 0;
+    font-weight: normal;
 }
 
 .form-group {
@@ -53,7 +57,7 @@ select, input {
 button {
     width: 100%;
     padding: 10px;
-    background: #d32027; /* Vermelho da imagem */
+    background: #d32027;
     border: none;
     border-radius: 4px;
     color: #fff;
@@ -64,7 +68,7 @@ button {
 }
 
 button:hover {
-    background: #b31c21; /* Tom mais escuro do vermelho */
+    background: #b31c21;
 }
 
 h2 {
@@ -85,11 +89,11 @@ h2 {
 }
 
 #copyButton {
-    background: #d32027; /* Vermelho da imagem */
+    background: #d32027;
 }
 
 #copyButton:hover {
-    background: #b31c21; /* Tom mais escuro do vermelho */
+    background: #b31c21;
 }
 
 #popup {
@@ -97,7 +101,7 @@ h2 {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #d32027; /* Vermelho da imagem */
+    background-color: #d32027;
     color: white;
     padding: 15px;
     border-radius: 5px;
@@ -130,10 +134,5 @@ footer {
 
     .output {
         font-size: 16px;
-    }
-
-    .header img {
-        width: 100%;
-        height: auto;
     }
 }
