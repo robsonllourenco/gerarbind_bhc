@@ -12,92 +12,92 @@ body {
 
 .container {
     background: #ffffff;
-    padding: 20px;
+    padding: 15px; /* Reduzindo o padding para tornar mais compacto */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
+    max-width: 400px; /* Ajustando a largura máxima */
     width: 90%;
     margin: 10px;
 }
 
 .header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduzindo espaço inferior */
 }
 
 h1 {
-    font-size: 2.5rem; /* Aumentando o tamanho da fonte */
-    color: #d32027; /* Vermelho forte da imagem */
+    font-size: 2rem; /* Ajuste no tamanho */
+    color: #d32027;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adicionando uma sombra sutil */
-    margin-bottom: 10px;
-    letter-spacing: 1px; /* Espaçamento entre letras */
-    padding: 10px 0;
-    border-bottom: 2px solid #d32027; /* Borda inferior para destacar o título */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra mais leve */
+    margin-bottom: 5px; /* Menor espaçamento */
+    letter-spacing: 1px;
+    padding: 5px 0;
 }
 
 h3 {
     color: #333;
     margin-top: 0;
     font-weight: normal;
-    font-size: 1.2rem; /* Ajustando o tamanho da fonte do subtítulo */
+    font-size: 1rem; /* Menor tamanho do subtítulo */
     letter-spacing: 1px;
-    text-transform: uppercase; /* Deixando o subtítulo em letras maiúsculas */
-    padding: 5px 0;
-    border-bottom: 1px solid #ddd; /* Borda inferior sutil */
-    margin-bottom: 20px;
-    font-style: italic; /* Adicionando um estilo itálico */
+    text-transform: uppercase;
+    font-style: italic;
 }
 
-
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Reduzindo o espaçamento */
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     color: #555;
+    font-size: 0.9rem; /* Diminuindo o tamanho das labels */
 }
 
 select, input {
     width: 100%;
-    padding: 10px;
+    padding: 8px; /* Reduzindo o padding para inputs mais compactos */
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 0.9rem; /* Tamanho menor dos inputs */
 }
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     background: #d32027;
     border: none;
     border-radius: 4px;
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s; /* Adicionando interação visual */
     margin-top: 10px;
 }
 
 button:hover {
     background: #b31c21;
+    transform: scale(1.05); /* Feedback de aumento ao passar o mouse */
 }
 
 h2 {
     text-align: center;
     color: #333;
-    margin-top: 20px;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 10px; /* Menor espaço superior e inferior */
 }
 
 .output {
     background: #f1f1f1;
-    padding: 15px;
+    padding: 10px; /* Reduzindo o padding */
     border-radius: 4px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem; /* Ajustando o tamanho */
     margin-bottom: 10px;
     border: 1px solid #ddd;
 }
@@ -108,6 +108,7 @@ h2 {
 
 #copyButton:hover {
     background: #b31c21;
+    transform: scale(1.05); /* Feedback de aumento ao passar o mouse */
 }
 
 #popup {
@@ -117,7 +118,7 @@ h2 {
     right: 20px;
     background-color: #d32027;
     color: white;
-    padding: 15px;
+    padding: 10px; /* Reduzindo o padding */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -128,25 +129,26 @@ footer {
     width: 100%;
     text-align: center;
     margin: -7px 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem; /* Diminuindo o tamanho da fonte do rodapé */
     color: #666;
 }
 
+/* Ajuste para mobile */
 @media (max-width: 600px) {
     .container {
-        padding: 15px;
+        padding: 10px;
     }
 
     .form-group {
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     select, input, button {
-        padding: 8px;
-        font-size: 14px;
+        padding: 7px;
+        font-size: 0.85rem; /* Ajustando para telas menores */
     }
 
     .output {
-        font-size: 16px;
+        font-size: 0.9rem;
     }
 }
