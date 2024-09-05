@@ -33,7 +33,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #7f20c4;
+    color: #d32027; /* Substituí pelo tom de vermelho da imagem */
     margin-bottom: 20px;
 }
 
@@ -58,7 +58,7 @@ select, input {
 button {
     width: 100%;
     padding: 10px;
-    background: #7f20c4;
+    background: #d32027; /* Vermelho da imagem */
     border: none;
     border-radius: 4px;
     color: #fff;
@@ -69,7 +69,7 @@ button {
 }
 
 button:hover {
-    background: #452d77;
+    background: #b31c21; /* Tom mais escuro do vermelho */
 }
 
 h2 {
@@ -90,11 +90,11 @@ h2 {
 }
 
 #copyButton {
-    background: #7f20c4;
+    background: #d32027; /* Vermelho da imagem */
 }
 
 #copyButton:hover {
-    background: #452d77;
+    background: #b31c21; /* Tom mais escuro do vermelho */
 }
 
 #popup {
@@ -102,7 +102,7 @@ h2 {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #5d3ea8;
+    background-color: #d32027; /* Vermelho da imagem */
     color: white;
     padding: 15px;
     border-radius: 5px;
