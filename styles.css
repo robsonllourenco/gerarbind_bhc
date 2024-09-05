@@ -26,11 +26,6 @@ body {
     width: 100%;
 }
 
-.logo {
-    max-width: 350px;
-    height: auto;
-}
-
 h1 {
     text-align: center;
     color: #d32027; /* Substituí pelo tom de vermelho da imagem */
