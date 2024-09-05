@@ -7,7 +7,8 @@ function gerarFrase() {
 
     const cargosFemininos = {
         'Vice Diretor': 'Vice Diretora',
-        'Estagiário': 'Estagiária',
+        'Residente': 'Residente',
+        'Diretor Executivo': 'Diretora Executiva',
         'Paramédico': 'Paramédica',
         'Socorrista': 'Socorrista',
         'Enfermeiro': 'Enfermeira',
@@ -18,7 +19,7 @@ function gerarFrase() {
         cargo = cargosFemininos[cargo];
     }
 
-    const frase = `bind ${tecla} me ✚ Medical Center / SAMU ✚ ${cargo} ✚ ${nome} ✚ RG: ${rg}`;
+    const frase = `${tecla} me ✚ Medical Center / SAMU ✚ ${cargo} ✚ ${nome} ✚ RG: ${rg}`;
     const fraseGeradaElement = document.getElementById('fraseGerada');
     fraseGeradaElement.innerText = frase;
 
