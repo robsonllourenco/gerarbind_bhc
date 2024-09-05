@@ -22,28 +22,26 @@ body {
 
 .header {
     text-align: center;
-    margin-bottom: 10px; /* Reduzindo espaço inferior */
+    margin-bottom: 10px; /* Reduzindo o espaçamento */
 }
 
 h1 {
-    font-size: 2rem; /* Ajuste no tamanho */
-    color: #d32027;
+    font-size: 1.8rem; /* Reduzindo o tamanho da fonte do título */
+    color: #d32027; /* Vermelho forte da imagem */
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra mais leve */
+    letter-spacing: 0.5px; /* Reduzindo o espaçamento entre letras */
     margin-bottom: 5px; /* Menor espaçamento */
-    letter-spacing: 1px;
-    padding: 5px 0;
 }
 
 h3 {
-    color: #333;
+    color: #666; /* Cinza suave para o subtítulo */
+    font-size: 1rem; /* Diminuindo o tamanho da fonte do subtítulo */
+    letter-spacing: 0.5px;
+    text-transform: uppercase; /* Mantendo maiúsculas para o subtítulo */
     margin-top: 0;
-    font-weight: normal;
-    font-size: 1rem; /* Menor tamanho do subtítulo */
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-style: italic;
+    font-style: italic; /* Deixando em itálico para suavizar */
 }
+
 
 .form-group {
     margin-bottom: 10px; /* Reduzindo o espaçamento */
