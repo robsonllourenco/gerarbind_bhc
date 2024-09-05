@@ -22,25 +22,36 @@ body {
 
 .header {
     text-align: center;
-    margin-bottom: 10px; /* Reduzindo o espaçamento */
+    margin-bottom: 15px; /* Aumentando levemente o espaçamento */
 }
 
 h1 {
-    font-size: 1.8rem; /* Reduzindo o tamanho da fonte do título */
-    color: #d32027; /* Vermelho forte da imagem */
+    font-size: 2rem; /* Ajuste sutil no tamanho */
+    background: linear-gradient(90deg, #d32027, #b31c21); /* Gradiente suave no título */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Aplicando o gradiente no texto */
     font-weight: bold;
-    letter-spacing: 0.5px; /* Reduzindo o espaçamento entre letras */
-    margin-bottom: 5px; /* Menor espaçamento */
+    letter-spacing: 0.5px; /* Leve espaçamento entre letras */
+    margin-bottom: 8px; /* Ajuste no espaçamento */
+    transition: transform 0.3s ease; /* Adicionando transição */
+}
+
+h1:hover {
+    transform: scale(1.05); /* Efeito de leve aumento no hover */
 }
 
 h3 {
-    color: #666; /* Cinza suave para o subtítulo */
-    font-size: 1rem; /* Diminuindo o tamanho da fonte do subtítulo */
-    letter-spacing: 0.5px;
-    text-transform: uppercase; /* Mantendo maiúsculas para o subtítulo */
+    color: #555; /* Cinza um pouco mais escuro */
+    font-size: 1rem;
+    letter-spacing: 0.8px; /* Aumentando espaçamento */
+    text-transform: uppercase;
     margin-top: 0;
-    font-style: italic; /* Deixando em itálico para suavizar */
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adicionando sombra leve ao subtítulo */
+    border-bottom: 1px solid #ddd; /* Linha fina no subtítulo para demarcação */
+    padding-bottom: 5px; /* Espaçamento na parte inferior do subtítulo */
 }
+
 
 
 .form-group {
