@@ -6,13 +6,21 @@ function gerarFrase() {
     const genero = document.getElementById('genero').value;
 
     const cargosFemininos = {
-        'Vice Diretor': 'Vice Diretora',
-        'Residente': 'Residente',
         'Diretor Executivo': 'Diretora Executiva',
+        'Vice Diretor': 'Vice Diretora',
+        'Coordenador Geral': 'Coordenadora Geral',
+        'Coordenador Administrativo': 'Coordenadora Administrativa',
+        'Coordenador Médico': 'Coordenadora Médica',
+        'Coordenador Auxiliar': 'Coordenadora Auxiliar',
+        'Supervisor Geral': 'Supervisora Geral',
+        'Médico Chefe': 'Médica Chefe',
+        'Médico Supervisor': 'Médica Supervisora',
+        'Médico Residente': 'Médica Residente',
+        'Auxiliar Médico': 'Auxiliar Médica',
+        'Enfermeiro': 'Enfermeira',
         'Paramédico': 'Paramédica',
         'Socorrista': 'Socorrista',
-        'Enfermeiro': 'Enfermeira',
-        'Coord. Médico': 'Coord. Médica'
+        'Residente': 'Residente'
     };
 
     if (genero === 'Feminino' && cargosFemininos[cargo]) {
