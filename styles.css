@@ -1,3 +1,4 @@
+/* Estilo básico e configurações de layout */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f2f2f2;
@@ -12,84 +13,73 @@ body {
 
 .container {
     background: #ffffff;
-    padding: 15px; /* Reduzindo o padding para tornar mais compacto */
+    padding: 20px; /* Aumentado para mais conforto em telas maiores */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px; /* Ajustando a largura máxima */
-    width: 90%;
+    max-width: 400px; /* Largura máxima para desktop */
+    width: 100%; /* Ajuste automático da largura em mobile */
     margin: 10px;
 }
 
 .header {
     text-align: center;
-    margin-bottom: 15px; /* Aumentando levemente o espaçamento */
+    margin-bottom: 15px;
 }
 
 h1 {
-    font-size: 2rem; /* Ajuste sutil no tamanho */
-    background: linear-gradient(90deg, #d32027, #b31c21); /* Gradiente suave no título */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Aplicando o gradiente no texto */
-    font-weight: bold;
-    letter-spacing: 0.5px; /* Leve espaçamento entre letras */
-    margin-bottom: 8px; /* Ajuste no espaçamento */
-    transition: transform 0.3s ease; /* Adicionando transição */
-}
-
-h1:hover {
-    transform: scale(1.05); /* Efeito de leve aumento no hover */
+    font-size: 1.8rem;
+    color: #d32027;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
 }
 
 h3 {
-    color: #555; /* Cinza um pouco mais escuro */
+    color: #555;
     font-size: 1rem;
-    letter-spacing: 0.8px; /* Aumentando espaçamento */
     text-transform: uppercase;
     margin-top: 0;
-    font-style: italic;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adicionando sombra leve ao subtítulo */
-    border-bottom: 1px solid #ddd; /* Linha fina no subtítulo para demarcação */
-    padding-bottom: 5px; /* Espaçamento na parte inferior do subtítulo */
+    font-style: normal;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    letter-spacing: 0.5px;
 }
 
-
-
 .form-group {
-    margin-bottom: 10px; /* Reduzindo o espaçamento */
+    margin-bottom: 10px;
 }
 
 label {
     display: block;
     margin-bottom: 3px;
     color: #555;
-    font-size: 0.9rem; /* Diminuindo o tamanho das labels */
+    font-size: 0.9rem;
 }
 
 select, input {
     width: 100%;
-    padding: 8px; /* Reduzindo o padding para inputs mais compactos */
+    padding: 10px; /* Mais espaço para melhorar a usabilidade em dispositivos móveis */
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 0.9rem; /* Tamanho menor dos inputs */
+    font-size: 1rem; /* Levemente maior para melhor leitura em mobile */
 }
 
 button {
     width: 100%;
-    padding: 8px;
+    padding: 10px; /* Aumentado para maior facilidade de toque em dispositivos móveis */
     background: #d32027;
     border: none;
     border-radius: 4px;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s; /* Adicionando interação visual */
+    transition: background 0.3s;
     margin-top: 10px;
 }
 
 button:hover {
     background: #b31c21;
-    transform: scale(1.05); /* Feedback de aumento ao passar o mouse */
 }
 
 h2 {
@@ -97,16 +87,16 @@ h2 {
     color: #333;
     font-size: 1.2rem;
     margin-top: 15px;
-    margin-bottom: 10px; /* Menor espaço superior e inferior */
+    margin-bottom: 10px;
 }
 
 .output {
     background: #f1f1f1;
-    padding: 10px; /* Reduzindo o padding */
+    padding: 10px;
     border-radius: 4px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-size: 1rem; /* Ajustando o tamanho */
+    font-size: 1rem;
     margin-bottom: 10px;
     border: 1px solid #ddd;
 }
@@ -117,7 +107,6 @@ h2 {
 
 #copyButton:hover {
     background: #b31c21;
-    transform: scale(1.05); /* Feedback de aumento ao passar o mouse */
 }
 
 #popup {
@@ -127,7 +116,7 @@ h2 {
     right: 20px;
     background-color: #d32027;
     color: white;
-    padding: 10px; /* Reduzindo o padding */
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -138,23 +127,47 @@ footer {
     width: 100%;
     text-align: center;
     margin: -7px 0;
-    font-size: 0.8rem; /* Diminuindo o tamanho da fonte do rodapé */
+    font-size: 0.8rem;
     color: #666;
 }
 
-/* Ajuste para mobile */
-@media (max-width: 600px) {
+/* Estilos de media queries para garantir responsividade */
+
+/* Para tablets */
+@media (max-width: 768px) {
     .container {
-        padding: 10px;
+        padding: 15px;
+        max-width: 90%;
     }
 
-    .form-group {
-        margin-bottom: 8px;
+    h1 {
+        font-size: 1.6rem;
     }
 
     select, input, button {
-        padding: 7px;
-        font-size: 0.85rem; /* Ajustando para telas menores */
+        font-size: 0.95rem;
+        padding: 9px;
+    }
+
+    .output {
+        font-size: 0.95rem;
+    }
+}
+
+/* Para dispositivos móveis (smartphones) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        max-width: 95%;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    select, input, button {
+        font-size: 0.9rem;
+        padding: 8px;
     }
 
     .output {
