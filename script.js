@@ -23,22 +23,24 @@ function gerarFrase() {
         'Residente': 'Residente'
     };
 
+    // Se for gênero feminino, ajusta o cargo
     if (genero === 'Feminino' && cargosFemininos[cargo]) {
         cargo = cargosFemininos[cargo];
     }
 
+    // Criação da frase com os dados fornecidos
     const frase = `bind ${tecla} me ✚ Medical Center / SAMU ✚ ${cargo} ✚ ${nome} ✚ RG: ${rg}`;
     const fraseGeradaElement = document.getElementById('fraseGerada');
     fraseGeradaElement.innerText = frase;
 
-    // Adicionando efeito de fade-in na exibição da frase gerada
+    // Exibição da frase gerada com efeito de fade-in simplificado
     fraseGeradaElement.style.opacity = 0;
     setTimeout(() => {
         fraseGeradaElement.style.transition = 'opacity 0.5s';
         fraseGeradaElement.style.opacity = 1;
     }, 100);
 
-    // Mostrar botão de copiar
+    // Exibir botão de copiar após gerar a bind
     document.getElementById('copyButton').style.display = 'block';
 }
 
@@ -51,7 +53,7 @@ function copiarFrase() {
     document.execCommand('copy');
     document.body.removeChild(textArea);
 
-    // Exibir pop-up de confirmação
+    // Exibir pop-up de confirmação de cópia
     const popup = document.getElementById('popup');
     popup.style.display = 'block';
     popup.style.opacity = 1;
